@@ -8,7 +8,6 @@
     src: url("../assets/norse-bold.otf");
 }
 
-
 body {
     margin: 0;
     height: 100vh;
@@ -19,6 +18,8 @@ body {
     display: flex;
     flex:auto;
 }
+
+/* Setup left part */
 
 .left-container {
     width: 30vw;
@@ -36,11 +37,7 @@ body {
     align-items: center;
     height: 150px;
     background-color: #00ffff30;
-    
-}
-
-.left-container-wrapper > div {
-    padding: 5px;
+    gap: 5px;
 }
 
 .left-container-text {
@@ -48,3 +45,120 @@ body {
     font-size: 4rem;
     color: aliceblue;
 }
+
+/* Setup right part */
+
+.right-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex:auto;
+}
+
+.right-container {
+    width: 70vw;
+    background-color: #f9fafb;
+    font-family: iceland,Arial, Helvetica, sans-serif;
+    padding-left: 50px;
+}
+
+.right-container-header {
+    margin-top: 150px;
+    font-size: 1.5rem;
+}
+
+/* Setup field form area */
+
+.right-container-form {
+
+    background-color: white;
+    box-shadow: 0px 5px 10px #d0d0d4;
+    margin-left: -50px;
+    height: 30vh;
+    margin-bottom: 20px;
+}
+
+.rc-form-header {
+    font-size: 2rem;
+    margin-left: 50px;
+    }
+
+.rc-form-fields {
+    margin-left: 50px;
+}
+
+.row-row {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    gap: 30px;
+}
+
+.row-column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    }
+
+input {
+    width: 300px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: 5px;
+    
+}
+
+.row-row {
+    margin-bottom: 20px;
+}
+
+.right-container-bottom {
+    font-family: iceland,Arial, Helvetica, sans-serif;
+
+}
+
+button {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: iceland,Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #33b1b6;
+    box-shadow: 0px 5px 10px #d0d0d4;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: #1f7174;
+        
+}
+
+.accountexists {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.accountcreated {
+    font-size: 1.5rem;
+    display: none;
+}
+
+
+input:focus {
+    outline: none;
+    border: 1px solid navy;
+    box-shadow: 0px 2px 6px #719ece;
+    }
+
+    .errors {
+        color: red;
+        font-size: 1.2rem;
+    }    

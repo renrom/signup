@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./scripts/signup.js" defer></script>
 </head>
+
 <body>
     <div class="main-container">
         <div class="left-container">
@@ -20,10 +22,89 @@
             </div>
         </div>
         <div class="right-container">
-            right-container
+            <div class="right-container-wrapper">
+                <div class="right-container-header">
+                    <h2>
+                        This in not a real online service! You know you need something like this in your life to help
+                        you
+                        realize your deepest dreams.
+                        <br>
+                        Sign up <em>now</em> to get started.
+                    </h2>
+                    <h2>
+                        You <em>know</em> you want to!
+                    </h2>
+                </div>
 
+                <div class="right-container-form">
+                    <div class="rc-form-header">
+                        <p>Let's do this!</p>
+                    </div>
+
+                    <div class="rc-form-fields">
+                        <div class="row-row">
+                            <div class="row-column">
+                                <label for="firstname">FIRST NAME</label>
+                                <input class="firstname" type="text" name="firstname" id="firstname" required>
+                                <span class="errors errfirstname"></span>
+                            </div>
+                            <div class="row-column">
+                                <label for="lastname">LAST NAME</label>
+                                <input class="lastname" type="text" name="lastname" id="lastname" required>
+                                <span class="errors errlastname"></span>
+                            </div>
+                        </div>
+
+                        <div class="row-row">
+                            <div class="row-column">
+                                <label for="email">EMAIL</label>
+                                <input class="email" type="email" name="email" id="email" required>
+                                <span class="errors erremail"></span>
+                            </div>
+                            <div class="row-column">
+                                <label for="phonenumber">PHONE NUMBER</label>
+                                <input class="phonenumber" type="tel" name="phonenumber" id="phonenumber" required>
+                                <span class="errors errphonenumber"></span>
+                            </div>
+                        </div>
+
+                        <div class="row-row">
+                            <div class="row-column">
+                                <label for="password">PASSWORD</label>
+                                <input class="password" type="password" name="password" id="password" required>
+                                <span class="errors errpassword"></span>
+                            </div>
+                            <div class="row-column">
+                                <label  for="cnfpassword">CONFIRM PASSWORD</label>
+                                <input class="cnfpassword" type="password" name="cnfpassword" id="cnfpassword" required>
+                            </div>
+                        </div>                        
+
+                    </div>
+
+                </div>
+
+                <div class="right-container-bottom">
+                    <section>
+                        <div class="create-account">
+                            <div class="submit">
+                                <button onclick="checkPasswords()" type="submit">Create Account</button>
+                            </div>
+                            <div class="accountexists">
+                                Already have an account? <a href="#">Log in</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="accountcreated">
+                            Account created succesfully!
+                        </div>
+                    </section>
+                            
+                </div>
+            </div>
         </div>
     </div>
- 
 </body>
+
 </html>
