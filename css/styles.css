@@ -90,9 +90,11 @@ body {
 .row-row {
     display: flex;
     flex-direction: row;
+    justify-content:flex-start;
     flex-wrap: wrap;
     flex: auto;
-    gap: 30px;
+    gap: 20px;
+    
 }
 
 .row-column {
