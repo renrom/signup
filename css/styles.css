@@ -1,0 +1,50 @@
+@font-face {
+    font-family: iceland;
+    src: url("../assets/iceland-regular.ttf");
+}
+
+@font-face {
+    font-family: odin;
+    src: url("../assets/norse-bold.otf");
+}
+
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.main-container {
+
+    display: flex;
+    flex:auto;
+}
+
+.left-container {
+    width: 30vw;
+    background-image: url("../assets/background.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.left-container-wrapper {
+    margin-top: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #00ffff30;
+    
+}
+
+.left-container-wrapper > div {
+    padding: 5px;
+}
+
+.left-container-text {
+    font-family: odin,Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: aliceblue;
+}
